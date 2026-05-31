@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rules - Fragments of Power</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;600&display=swap');
+
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .title-font { font-family: 'Cinzel', serif; }
+
+    .hero-bg {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.88)), 
+                        url('https://fragmentsofpower.com/planet.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+    }
+
+    .tab {
+      transition: all 0.3s ease;
+      font-size: 1.02rem;
+      padding: 14px 22px;
+    }
+    
+    .tab-active {
+      border-bottom: 5px solid #fbbf24;
+      color: #fcd34d;
+      background-color: rgba(0, 0, 0, 0.55);
+    }
+
+    .tabs-container::-webkit-scrollbar { display: none; }
+  </style>
+</head>
+
+<!-- Back to Top Button -->
+  <button id="backToTop" 
+          class="fixed bottom-8 right-8 bg-black/70 hover:bg-amber-600 text-amber-400 hover:text-white border border-amber-400/30 hover:border-amber-400 w-12 h-12 rounded-2xl flex items-center justify-center shadow-xl transition-all duration-300 z-50 opacity-0 invisible">
+    <i class="fa-solid fa-arrow-up text-xl"></i>
+  </button>
+
+  <script>
+    // Back to Top Button
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTop.classList.remove('opacity-0', 'invisible');
+        backToTop.classList.add('opacity-100', 'visible');
+      } else {
+        backToTop.classList.add('opacity-0', 'invisible');
+        backToTop.classList.remove('opacity-100', 'visible');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+<body class="bg-black text-white">
+
+  <div class="hero-bg min-h-screen">
+
+    <div class="fixed top-6 left-6 z-50">
+      <a href="index.html" class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors bg-black/50 backdrop-blur-md px-4 py-2 rounded-xl">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span class="font-medium">Back to Home</span>
+      </a>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-6 py-16">
+
+      <div class="text-center mb-12">
+        <h1 class="title-font text-6xl md:text-7xl font-bold tracking-widest text-amber-100 drop-shadow-2xl">RULES</h1>
+        <p class="text-amber-400/70 mt-3 text-lg">Fragments of Power</p>
+      </div>
+
+      <div class="flex justify-center mb-12">
+        <div class="bg-black/50 backdrop-blur-md rounded-3xl p-2 border border-amber-900/40 inline-block">
+          <div id="tabs" class="tabs-container flex overflow-x-auto gap-2 px-3 hide-scrollbar"></div>
+        </div>
+      </div>
+
+      <div id="content" class="min-h-[520px] text-zinc-200 leading-relaxed bg-black/70 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl prose prose-invert max-w-none"></div>
+
+    </div>
+  </div>
+
+  <script>
+    const tabsConfig = [
+      { title: "General Rules", file: "general-rules.html" },
+      { title: "Combat", file: "combat.html" },
+      { title: "Skills", file: "skills.html" },
+      { title: "Spells", file: "spells.html" },
+      { title: "Objects", file: "objects.html" },
+      { title: "Vehicles", file: "vehicles.html" }
+    ];
+
+    const tabsContainer = document.getElementById('tabs');
+    const contentContainer = document.getElementById('content');
+
+    async function loadContent(filename) {
+      try {
+        const response = await fetch(filename);
+        if (!response.ok) throw new Error(`Failed to load ${filename}`);
+        contentContainer.innerHTML = await response.text();
+      } catch (err) {
+        contentContainer.innerHTML = `<p class="text-red-400">Error loading ${filename}. Make sure the file exists in the same folder.</p>`;
+      }
+    }
+
+    function createTabs() {
+      tabsContainer.innerHTML = '';
+      tabsConfig.forEach((tab, index) => {
+        const btn = document.createElement('button');
+        btn.className = `tab whitespace-nowrap text-amber-100 hover:text-amber-300 rounded-2xl transition-all ${index === 0 ? 'tab-active' : ''}`;
+        btn.textContent = tab.title;
+        btn.onclick = () => {
+          document.querySelectorAll('.tab').forEach(t => t.classList.remove('tab-active'));
+          btn.classList.add('tab-active');
+          loadContent(tab.file);
+        };
+        tabsContainer.appendChild(btn);
+      });
+    }
+
+    // Initialize
+    createTabs();
+    loadContent('general-rules.html');
+  </script>
+</body>
+</html>

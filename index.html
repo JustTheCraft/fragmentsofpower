@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fragments of Power</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+    
+    .title-font {
+      font-family: 'Cinzel', serif;
+    }
+
+    .hero-bg {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), 
+                        url('https://fragmentsofpower.com/planet.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .nav-tab {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .nav-tab:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white overflow-x-hidden">
+  
+ <!-- HERO SECTION -->
+<div class="hero-bg min-h-screen flex flex-col items-center justify-center relative">
+  
+  <!-- Logo (between background and title) -->
+  <img src="https://fragmentsofpower.com/logo.png" 
+       alt="Fragments of Power Logo"
+       class="absolute top-12 left-1/2 -translate-x-1/2 w-64 md:w-80 lg:w-96 opacity-90 drop-shadow-2xl z-10">
+
+  <!-- Main Centered Title -->
+  <div class="text-center px-6 z-20 mt-12">
+    <h1 id="game-title" 
+        class="title-font text-8xl md:text-9xl font-bold tracking-widest text-amber-100 drop-shadow-2xl">
+      FRAGMENTS
+    </h1>
+  </div>
+
+  <!-- Bottom Navigation -->
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 w-full max-w-5xl px-6 z-20">
+  <div class="grid grid-cols-3 gap-6">
+    
+    <!-- Characters (Left) -->
+    <a href="character-creation.html" 
+       class="nav-tab group bg-zinc-900/90 backdrop-blur-md border border-amber-900/50 hover:border-amber-400 rounded-2xl p-6 text-center">
+      <div class="w-12 h-12 mx-auto mb-4 bg-amber-900/30 group-hover:bg-amber-600 rounded-xl flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-user-gear text-2xl text-amber-400"></i>
+      </div>
+      <h3 class="text-2xl font-semibold title-font tracking-wider text-amber-100">CHARACTERS</h3>
+      <p class="text-sm text-zinc-400 mt-1">Build your legend</p>
+    </a>
+
+    <!-- Rules (Middle) -->
+    <a href="rules.html" 
+       class="nav-tab group bg-zinc-900/90 backdrop-blur-md border border-amber-900/50 hover:border-amber-400 rounded-2xl p-6 text-center">
+      <div class="w-12 h-12 mx-auto mb-4 bg-amber-900/30 group-hover:bg-amber-600 rounded-xl flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-book text-2xl text-amber-400"></i>
+      </div>
+      <h3 class="text-2xl font-semibold title-font tracking-wider text-amber-100">RULES</h3>
+      <p class="text-sm text-zinc-400 mt-1">Core mechanics & systems</p>
+    </a>
+
+    <!-- Gamemasters (Right) -->
+    <a href="gamemasters.html" 
+       class="nav-tab group bg-zinc-900/90 backdrop-blur-md border border-amber-900/50 hover:border-amber-400 rounded-2xl p-6 text-center">
+      <div class="w-12 h-12 mx-auto mb-4 bg-amber-900/30 group-hover:bg-amber-600 rounded-xl flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-dice-d20 text-2xl text-amber-400"></i>
+      </div>
+      <h3 class="text-2xl font-semibold title-font tracking-wider text-amber-100">GAMEMASTERS</h3>
+      <p class="text-sm text-zinc-400 mt-1">Tools & guidance</p>
+    </a>
+
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+  <script>
+    // Easy customization
+    const titleElement = document.getElementById('game-title');
+    
+    // Change the main word here:
+    // titleElement.textContent = "YOURWORD";
+    
+    // Optional: Add a subtle parallax effect on scroll
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const hero = document.querySelector('.hero-bg');
+      hero.style.backgroundPositionY = `${scrollY * 0.4}px`;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+<div class="space-y-16">
+
+  <!-- Main Title -->
+  <div>
+    <h2 class="title-font text-5xl font-bold text-amber-100 mb-2">Combat</h2>
+    <p class="text-amber-400/70 text-lg">Conflict & Battle Rules</p>
+  </div>
+
+  <!-- Introduction -->
+  <div>
+    <h3 class="title-font text-3xl font-bold text-amber-100 mb-8">Introduction</h3>
+    <div class="prose prose-invert max-w-none text-zinc-200 leading-relaxed space-y-6">
+      <p>While playing you may frequently find yourself coming into conflict with NPCs and monsters. You may be able to solve things using your social Skills or other nonviolent means, but often things will come to blows. This is combat.</p>
+    </div>
+  </div>
+
+  <!-- Parts of a Round -->
+  <div>
+    <h3 class="title-font text-3xl font-bold text-amber-100 mb-8">Parts of a Round</h3>
+    <div class="prose prose-invert max-w-none text-zinc-200 leading-relaxed space-y-8">
+      <p>Combat consists of Rounds where every Creature gets a Turn. The Turn order is Determined by rolling Initiative at the start of combat. If there is a tie in Initiative order is Determined at random. While the idea of Rounds, Turns, and Actions are mostly used in combat it is important to remember that abilities that use these terms can be used outside of a normal combat (like using a Reaction to catch a ledge when Falling, or using Actions to Cast a Spell that will last several Rounds). Creatures that are completely unaware of combat (like in an ambush where the attackers are Undetected) do not act in the first Round of combat.</p>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Round</h4>
+        <p>A Round is a 6 second increment of time in which every Creature in the combat gets 1 Turn. This starts with the Creature who rolled the highest Initiative and then continuous in order from highest to lowest. At any point a Creature can decide to hold its Turn and drop its point in the Initiative count to a lower position. If a Creature decides to hold its Turn it must wait until the end of another's Creatures Turn before entering the Initiative count. (If something has a Duration of 1 Round it will end after all other Creatures have gotten a Turn, not the end of the Initiative count)</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Turn</h4>
+        <p>Every Creature in the Initiative gets a Turn. Each Creatures Turn consists of three Actions that they performed consecutively and one Reaction they can use during any other Creatures Turn before the start of their own next Turn. If a Creature does not yet wish to act at the start of their Turn they may decide to delay their Turn, voluntarily changing their place in Initiative for the rest of the combat. They must still experience any Effects that would normally affect them at the start of their Turn. When a Creature delaying their Turn wishes to act they may enter the Initiative again after the current Turn. Until the Creature enters the Initiative again they continue to suffer any ongoing Effects (such as Bleed Damage, or ongoing Spell Effects) each Round at their original Initiative.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Action</h4>
+        <p>An Action is the basic component of your Turn. During a Turn you get three Actions. An Action is most commonly used to Move, Attack, Cast a Spell, or interact with an Object, but is not limited to these uses. (Drawing a Weapon, moving up to your Speed and then attacking is a perfect example of three Actions.)</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Reaction</h4>
+        <p>A Reaction is a special Type of Action that can be used at any time. Every Creature gets 1 Reaction per Round starting on their Turn and expiring the start of their next Turn, but can obtain more through Feats. Reactions cannot be used to take normal Actions and are only used for specific abilities, often with specific triggers. When a Reaction is triggered by an event it interrupts the event, potentially changing the outcome.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Free Action</h4>
+        <p>A Free Action is a special Type of Action that does not count as one of your Actions or Reactions for the Turn. Free Actions can be used to do things that require no effort like drop an item, adjust your grip on a Weapon, or fall Prone, as well as things that happen as part of another Action, such as drawing ammunition to fire a ranged Weapon. Free Actions are also used by a number of Feats to allow the user to do more with their Turn. Free Actions must be done on your Turn or when triggered by an ability you have.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Actions -->
+  <div>
+    <h3 class="title-font text-3xl font-bold text-amber-100 mb-8">Actions</h3>
+    <div class="prose prose-invert max-w-none text-zinc-200 leading-relaxed space-y-8">
+      <p>When using Actions you have many different options on how to interact with the world. While most mundane things like opening a door, or drawing a Weapon might take an Action (or more if the GM thinks it should take longer), there are specific rules outlined below for most Actions you might take in combat. You can perform any combinations of Actions on you Turn as long as you have the ability to perform them.</p>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Attack</h4>
+        <p>You make a melee or Ranged Attack roll against the targets Physical Defense. On a success you deal Damage with your Weapon. On a Critical Success you deal double Damage. If an Action would cause you to Attack all Creatures in an Area (such as a Spell or the "Volley"Feat) make a single Attack roll for the ability.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Melee Attack</h4>
+        <p>A Melee Attack is when you try and hit someone in close Range. Your Melee Attack roll is a d20+Level+STR. While wielding a Light Weapon or Medium Weapon you may use your DEX for Melee Attack rolls (but not Damage rolls) instead of your STR.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Ranged Attack</h4>
+        <p>A Ranged Attack is when you try and hit someone with a ranged or thrown Weapon. Your Ranged Attack roll is a d20+Level+DEX. If the target of the Attack is farther away than the Range Increment of the Weapon you take a -1 Penalty on the Attack for every Range Increment it is from you rounded down. If the target is within 5ft of you, you roll with Disadvantage. (targets behind other Creatures, including your Allies may recieve Cover as well)</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Spell Attack</h4>
+        <p>A Spell Attack is when you try and hit someone with a magical Effect either from a Spell you know, or an enchanted item you are wielding. Your Spell Attack roll is a d20+Level+ESS. The Attack may target physical or Mental Defense depending on the Effect. If your Spell Attack roll is equal to or higher than the appropriate defense stat the Spell Effects the target.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Move</h4>
+        <p>You Move up to your Speed or stand up from Prone. While moving you decide where you are moving as you Move. For example if you spend half your movement to enter another room you may use the second half to continue or retreat depending on what you see. You can Move through allied Creatures squares as part of your movement at no Penalty. You may attempt to Move through an Enemies square as part of a Move by making a Push attempt against them as a Free Action. This Push attempt has the following Effects instead of the normal ones: on a failure your movement ends, on a success you may treat their square as Difficult Terrain, on a Critical Success you can Move through their square at no Penalty.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Cast</h4>
+        <p>You Cast a Spell. Upon Casting the Spell you choose the amount of Energy to spend on each component of the Spell and a target or Area within its Range. The Spells Effect determines what happens including whether or not you need to make a Spell Attack. If you are Casting a Spell using a magic item you must use the given amount of Energy on each component of the Spell, but can still choose the target or Area as normal.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Control</h4>
+        <p>You can spend an Action to Control a Spell you Cast on a previous Turn. The Effects of controlling a Spell depend on what kind of Spell you Cast. If a Spell is not controlled it will continue until its Duration ends. You can only Control a Spell once per Turn.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Command</h4>
+        <p>You Command a Creature under your Control such as an Beast companion, mount or summoned Creature. This Action can only be used on a Creature once per Round. When a Creature is commanded they are able to use their Actions, taking their Turn simultaneously with yours. (For example while riding a mount you may use your first Action to Command the mount, then have the mount spend one of its Actions to Move to an Enemy, its second Action to Attack the Enemy, then your remaining two Actions to Attack the Enemy twice, and finally the mounts third Action to Move away from the Enemy.) Any Creature that can be commanded this way consider the start of the last Creature to Command its Turn as the start of their Turn for determining continuous Effects (such as burning, Bleeding, Poison, or Spell Effects) even if they are not commanded that Turn.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Focus</h4>
+        <p>You can spend an Action to Focus, recharging your Energy. For each Action spent focusing you gain Energy equal (ESS+Level)/3 rounded down.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Dodge</h4>
+        <p>You spend one Action to give the next Attack against you Disadvantage.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Maneuver</h4>
+        <p>A Maneuver is a special Type of Attack. Any time you would be able to make a Melee Attack you may instead attempt to Break, Disarm, Feint, Grapple, Push, or Trip with the same Reach. These count as Attacks and use Attack rolls, but instead of dealing Damage cause an Effect. Maneuvers often are made as opposed roles or use the Mental Defense of the target instead of the Physical Defense of the target. (this means that Maneuvers can be used in place of any Melee Attack and count as an Attack for Feats like Wrath, but does not deal the Damage from Feats like Weapon Specialization or Battle Trance because the Damage is replaced by the Effect the Maneuver causes)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Maneuvers -->
+  <div>
+    <h3 class="title-font text-3xl font-bold text-amber-100 mb-8">Maneuvers</h3>
+    <div class="prose prose-invert max-w-none text-zinc-200 leading-relaxed space-y-8">
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Break</h4>
+        <p>You make an opposed Melee Attack roll. If you succeed you deal Damage to an Object they are carrying. If your roll is a Critical Success you deal double Damage.</p>
+      </div>
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Push</h4>
+        <p>You make an opposed Melee Attack roll. If you succeed you Push them back 5ft. If your roll is a Critical Success you may Push them up to 15ft. You must remain adjacent to the Enemy and cannot Move more than your Speed. If their movement is ended prematurely by a hard surface (such as a wall) they take a d6 of Damage for every 5 ft they could not travel and fall Prone.</p>
+      </div>
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Feint</h4>
+        <p>You make a Melee Attack roll against the targets Mental Defense, on a success instead of dealing Damage the target is Flat Footed against you for the rest of your Turn. If your roll is a Critical Success they are Flat Footed against everyone until your next Turn.</p>
+      </div>
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Disarm</h4>
+        <p>You make an opposed Melee Attack roll. If you succeed they drop an item they are carrying of your choice. The item lands on the ground in their square. If your roll is a Critical Success you may either fling the item 10ft away from them in a direction of your choice, or take the item.</p>
+      </div>
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Trip</h4>
+        <p>You make an opposed Melee Attack roll. If you succeed they fall Prone. Flying Creatures fall 50ft (or until they hit the ground). On a Critical Success the target takes fall Damage as if they had fallen from 10 ft. (in addition to any other fall Damage they would take)</p>
+      </div>
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Grapple</h4>
+        <p>You make an opposed Melee Attack roll. On a success you are Grappling the Creature, and it is Grappled by you. Both Creatures share the space of the larger Creature. If both are the same Size they share the space of the Grappled Creature. On a Critical Success the Grappled Creature is Slowed for one Round. You must have a free hand or Natural Weapon to Grapple a Creature.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Additional Actions -->
+  <div>
+    <h3 class="title-font text-3xl font-bold text-amber-100 mb-8">Additional Actions</h3>
+    <div class="prose prose-invert max-w-none text-zinc-200 leading-relaxed space-y-8">
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Readied action</h4>
+        <p>You may use two Actions to ready a single Action. In doing so you must choose a specific Action to ready and a specific condition to trigger that Action. This Action may be triggered at any point up to your next Turn.</p>
+      </div>
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Use a Skill</h4>
+        <p>You use a Skill such as Jump, Sneak, Intimidate, etc. as described on the Skills page. (this may take more than an Action depending on the situation)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terrain and movement -->
+  <div>
+    <h3 class="title-font text-3xl font-bold text-amber-100 mb-8">Terrain and movement</h3>
+    <div class="prose prose-invert max-w-none text-zinc-200 leading-relaxed space-y-8">
+      <p>The surrounding terrain can have an important Effect on combat. Walls can grant Cover, underbrush may cause Difficult Terrain, Darkness may hide assassins, and great heights pose risk of Falling.</p>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Difficult Terrain</h4>
+        <p>If the ground is hard to walk over it is considered Difficult Terrain and all movement through it counts as moving twice as far. (thick underbrush, knee deep water, rubble, etc.) If you have an ability that allows you to pass through the Area by other means, such as fly over it, Burrowing under it, or teleporting across it, you may do so without Penalty. Whether you are moving in Difficult Terrain is Determined by the square you are moving out of. Larger Creatures may be able to ignore what would be Difficult Terrain for smaller Creatures.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Running</h4>
+        <p>You Move as you choose up to your Speed along the ground.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Crawling</h4>
+        <p>While Prone you can Move 5ft.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Swimming</h4>
+        <p>You Move through water using the Swim Skill. If the water has a current it moves every Creature in it in the direction of the current at the start of their Turns a distance dependant on the current's Speed.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Suffocating</h4>
+        <p>You can hold your breath a number of Rounds equal to your STR. At the end of this time you drop to 0 HP and become Incapacitated. At the end of your next Turn if you still have not gotten a chance to breathe you die.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Falling</h4>
+        <p>Any time a Creature would fall they may make a Climb Check as a Reaction to Grab a nearby surface if possible (even if they fell while trying to Climb that surface). Creatures that fall take Damage based on their Size and the distance they fell up to a maximum of 100ft. Landing in water may reduce the effective distance of the fall by 50 ft (you would need to fall 150ft to take the max 100 ft of fall Damage). If a Creature jumps into a fall intentionally it may reduce the effective distance of the fall based on a Jump roll. Creatures fall 100ft a Round starting as soon as they are unsupported (but can fall faster if propelling themself like with Flight). If Falling a distance greater than 100 ft they continue Falling at the start of each of their Turns.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Climbing</h4>
+        <p>You scale climbable surfaces using the Climb Skill.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Flying</h4>
+        <p>if you have the Flight Feat you can Move up to twice your Speed through the air. Turning 45 degrees requires an additional 5ft of movement and ascending 5ft requires 10 ft of movement, but descending 10ft only requires 5ft of movement. You must fly at least your Speed. If you do not spend an Action on your Turn to fly you fall as normal. With Improved Flight you do not have to spend additional movement to Turn or ascend and hover in place if you do not spend an Action to fly on your Turn.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Zero-G/Free Fall</h4>
+        <p>Unless you are able to fly (in which case you can fly normally) you are only able to Move by pushing off of of things. If you Push of of a fixed Object such as a wall, or an Object at least 2 sizes larger than you, you Move up to your Speed in a straight line. You will continue to Move in that direction at you Speed at the beginning of your Turn every Round until you run into something. If you Push off an unfixed Object within 1 Size of you, you Move up to half your Speed in a straight line and the Object you pushed off of moves in the opposite direction at the same Speed. You and the other Object will continue to Move in the corresponding directions at half your Speed at the beginning of your Turn every Round until you run into something. If you make an Attack or are hit while not touching a fixed Object you must spend an Action to Stabilize yourself or take Disadvantage on all Attack rolls until you touch a fixed Object.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Darkness</h4>
+        <p>Creatures in Darkness are Concealed to all Creatures that do not have Darkvision or another way of perceiving their exact location.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Light</h4>
+        <p>Light is usually dependant on the environment (such as the sun, or lights in a building) but can also be produced by smaller sources. Fire usually lights a 20ft radius, but may be more or less depending on the source.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Fog</h4>
+        <p>Fog (or similar Effects like smoke, mist, or dust clouds) obscures vision. If Fog interrupts sight of a Creature at any point the Creature is Concealed (this may be because the viewer is in Fog, the Creature is in Fog, or there is Fog between the two) unless the viewer has another way of sensing the Creatures exact location.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Occupied Squares</h4>
+        <p>Creatures may Move through squares occupied by Allies or by Creatures either 2 sizes larger or smaller than themselves. While moving through these squares count as Difficult Terrain.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Burrowing</h4>
+        <p>You can Move through dirt or other soft earth in any direction. While Burrowing you leave a tunnel behind you that collapses after 1 Round. You cannot Burrow through solid stone or other similar mediums.</p>
+      </div>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-xl mb-3">Thin Ice</h4>
+        <p>Can support 2 Bulk per 5ft square for every inch thick it is. A 5ft square of ice has 8 HP per inch and a Durability of 1. Ice is Vulnerable to Fire Damage.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conditions -->
+  <div>
+    <h3 class="title-font text-3xl font-bold text-amber-100 mb-8">Conditions</h3>
+    <div class="prose prose-invert max-w-none text-zinc-200 leading-relaxed space-y-8">
+      <p>Conditions are used to represent circumstances that may help or hinder you in combat, for example Falling on the ground means you'll have the "Prone" condition. Subjective Conditions are applied based on the respective of two Creatures, for example if you are hiding behind a wall from an archer, the Cover would make you Concealed to the archers Attacks, but not from Creatures who have a clear line of sight to you. Objective Conditions are things that are true about you regardless of other Creatures position, like you being Prone or Blinded.</p>
+      
+      <div>
+        <h4 class="text-amber-300 font-bold text-2xl mb-6">Subjective Conditions</h4>
+        <div class="space-y-8">
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Flat Footed</h4>
+            <p>Attacks against a Flat Footed Creature have Advantage</p>
+          </div>
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Flanked</h4>
+            <p>A Flanked Creature has two Enemies on opposites sides of it and is within both of their Reach. Creatures are considered to be on opposite sides of a Creature if you can draw a line between any two points in their space that crosses opposite sides of the Flanked Creature. A Flanked Creature is Flat Footed against both of the flanking Creatures.</p>
+          </div>
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">High Ground</h4>
+            <p>If Ranged Attacks made against a target at least 10ft beneath them it deals an additional d6 Damage.</p>
+          </div>
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Cover</h4>
+            <p>If the target of an Attack is partially obscured by a Creature or Object of at least their Size (or the attacker believes the target is obscured due to an illusion) it has Cover. If it is completely obscured by a protective Object it cannot be attacked. Attacks against Creatures with Cover are made with Disadvantage. If being attacked by an Effect with an Area determine Cover based on the point of origin of the Area.</p>
+          </div>
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Line of Effect</h4>
+            <p>Line of Effect is when an unobstructed line could be drawn from a point within your space to a target. While this normally means any point you could see, Line of Effect is not affected by things that prevent vision, like Darkness or Fog.</p>
+          </div>
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Seen</h4>
+            <p>The Creature can be Seen and acts as normal.</p>
+          </div>
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Concealed</h4>
+            <p>The Creature is hard to see (This may be do to Darkness, Fog, or other Effects) but it's general location can still be discerned. All Attacks made against Concealed Creatures are at a Disadvantage. Attacks made against an Area are not subject to concealment.</p>
+          </div>
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Hidden</h4>
+            <p>The Creatures location cannot be discerned. The Creature is Concealed and Creatures it is Hidden from are Flat Footed against it. Other Creatures attempting to target a Hidden Creature must declare what square they think it is in before attempting an Attack roll. If the wrong square is targeted the Attack roll is still made, but always misses. If the Hidden Creature ends their Turn without concealment or their location is discovered by another Creature (hitting them, walking into them, being attacked by them, using investigation to track them, etc) they are no longer Hidden to that Creature.</p>
+          </div>
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Undetected</h4>
+            <p>The Creatures presence is completely unnoticed. The Creature is also Hidden.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-amber-300 font-bold text-2xl mb-6">Objective Conditions</h4>
+        <div class="space-y-8">
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Bleeding</h4>
+            <p>At the start of a Bleeding Creatures Turn, before any other continuous Effects, it rolls on the Bleed Table subtracting its Bleed Penalty from the total. A Creatures Bleed Penalty starts at 0. Any time the Creature takes Damage, their Bleed Penalty increases by 1. Any time the Creature is healed, their Bleed Penalty is reduced by 1. After rolling on the Bleed Table the Creature suffers 2d6 Bleed Damage (increaseing their Bleed Penalty as normal). A sucessful Medicine Check on this Creature resets their Bleed Penalty to 0 and ends this condition.</p>
+          </div>
+          
+<div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Bleed Table</h4>
+            <table class="w-full border-collapse text-zinc-200">
+              <thead>
+                <tr class="border-b border-amber-900">
+                  <th class="text-left py-3 px-4 font-bold text-amber-300">Result</th>
+                  <th class="text-left py-3 px-4 font-bold text-amber-300">Description</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-amber-900/50">
+                <tr>
+                  <td class="py-3 px-4">0 or less</td>
+                  <td class="py-3 px-4">Death</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4">1 - 5</td>
+                  <td class="py-3 px-4">Unconscious</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4">6 - 10</td>
+                  <td class="py-3 px-4">Deteriorate</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4">11 - 15</td>
+                  <td class="py-3 px-4">Improve</td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4">16 - 20</td>
+                  <td class="py-3 px-4">Stabilize</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Blinded</h4>
+            <p>A Blinded Creature is Flat Footed against all other Creatures and all other Creatures have concealment against it.</p>
+          </div>
+          
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Dead</h4>
+            <p>A Creature dies when it has a negative HP equal to or greater than its max HP, or when rolls "Dead" on the Incapacitation table.</p>
+          </div>
+          
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Destroyed</h4>
+            <p>When an Object has 0 HP it is Destroyed. Some of the materials may be salvageable, but it is not useable in its current condition.</p>
+          </div>
+          
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Entangled</h4>
+            <p>An Entangled Creature cannot Move from its space under its own Power. (it can still be dragged or pushed by other Creatures or Effects)</p>
+          </div>
+          
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Shaken</h4>
+            <p>A Shaken Creature has Disadvantage on all Attack rolls. Additional instances of Shaken add to the Duration.</p>
+          </div>
+          
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Grappled</h4>
+            <p>You are being Grappled by another Creature. You cannot use one of your arms or Natural Weapons. If you are equal to or smaller than the Creature Grappling you, you are Entangled, otherwise your Speed is halved. If you Move the Creature Grappling you moves with you. If you fall Prone the Creature Grappling you falls with you. You are Flat Footed to the Creature Grappling you. If you succeed an opposed Melee Attack roll against the Creature Grappling you to Push them away or Grapple them this condition ends.</p>
+          </div>
+          
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Grappling</h4>
+            <p>You are Grappling another Creature. You cannot use one of your arms or Natural Weapons. If you are smaller than the Creature you are Grappling, you are Entangled, otherwise your Speed is halved. If you Move the Creature you are Grappling moves with you. If you fall Prone the Creature you are Grappling falls with you. As an Action you may prevent the Creature you are Grappling from breathing for the next Round. If the Creature you are Grappling succeeds an opposed Melee Attack roll against you to Push you away or Grapple you this condition ends. You can release the other Creature as a Free Action to end the Grapple.</p>
+          </div>
+          
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Incapacitated</h4>
+            <p>A Creature with 0 or less HP that is not Dead is Incapacitated. When a Creature first becomes Incapacitated it is knocked Prone, and begins Bleeding. An Incapacitated Creature gets 2 less Actions and 2 less Reactions per Turn to a minimum of 0 (usually 1 Action and 0 Reactions).</p>
+          </div>
+          
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Invisible</h4>
+            <p>An Invisible Creature is Concealed to all other Creatures unless they have another sense that can discern its exact location</p>
+          </div>
+          
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">On fire</h4>
+            <p>A Creature that is On fire takes 2d6 of Fire Damage every Round at the beginning of their Turn. A Creature may put out the fire by spending an Action to drop Prone and roll on the ground, or by entering a body of water.</p>
+          </div>
+          
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Poisoned</h4>
+            <p>A Poisoned Creature takes Damage every Round at the beginning of their Turn for the specified amount of time. Multiple instances of Poison do not stack (apply only the highest Level of Poison), but their Durations are tracked separately.</p>
+          </div>
+          
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Prone</h4>
+            <p>A Creature that is lying on the ground is Prone. It has Disadvantage on Melee Attacks, Melee Attacks against it have Advantage, and Ranged Attacks against it have Disadvantage. A Prone Creature can stand as an Action or Crawl 5ft.</p>
+          </div>
+          
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Slowed</h4>
+            <p>A Slowed Creature has one less Action and one less Reaction per Turn to a minimum of 0. (usually 2 Actions and 0 Reactions)</p>
+          </div>
+          
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Stunned</h4>
+            <p>A Stunned Creature can take no Actions, Reactions or Free Actions and is Flat Footed to all other Creatures.</p>
+          </div>
+          
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Squeezing</h4>
+            <p>A Creature can Move through a space half the Size it would normally be able to. The space counts as Difficult Terrain for the Creature. While in this space the Creature is Flat Footed against all other Creatures and has Disadvantage on Attacks with Heavy Weapons.</p>
+          </div>
+          
+          <div>
+            <h4 class="text-amber-300 font-bold text-xl mb-3">Unconscious</h4>
+            <p>An Unconscious Creature can take no Actions, Reactions, or Free Actions. They fall Prone and are Flat Footed to all other Creatures.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
